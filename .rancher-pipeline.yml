@@ -1,0 +1,11 @@
+stages:
+- name: build-image
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: rancher-demo:master-latest
+      pushRemote: true
+      registry: gcr.io
+timeout: 60
+notification: {}
