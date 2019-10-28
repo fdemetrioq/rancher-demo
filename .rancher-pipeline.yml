@@ -6,6 +6,6 @@ stages:
       buildContext: .
       tag: gcr.io/imed-cl/rancher-demo:master-latest
       pushRemote: true
-      registry: gcr.io
+      registry: gcr.io/imed-cl
 timeout: 60
 notification: {}
