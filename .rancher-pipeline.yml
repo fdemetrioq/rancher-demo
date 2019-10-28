@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: rancher-demo:master-latest
+      tag: gcr.io/imed-cl/rancher-demo:master-latest
       pushRemote: true
       registry: gcr.io
 timeout: 60
